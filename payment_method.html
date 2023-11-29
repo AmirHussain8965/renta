@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Renta - Payment Method</title>
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <Header class="header_section">
+        <div class="container-fluid manage_container">
+            <div class="navbar_main_div">
+                <div class="navbar_logo_main_div">
+                    <a href="index.html"><img src="assets/img/n_logo.svg" alt=""></a>
+                </div>
+                <!-- <div class="navbar_btn_div">
+                    <div class="dropdown_login">
+                        <button class="dropbtn">Sign up / Log in</button>
+                        <div class="dropdown-content">
+                            <i class="bi bi-caret-up-fill"></i>
+                            <a href="accounts/login.html"><img
+                                    src="assets/img/dot.svg" alt=""> Log in</a>
+                            <a href="accounts/signup.html" class="mt-4"><img
+                                    src="assets/img/dot.svg" alt=""> Sign Up</a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="navbar_profile_main_div">
+                    <div class="navbar_profile_inner_div">
+                        <div class="dropdown">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>User Name </span>
+                                <div>
+                                    <img src="assets/img/User2.svg" alt="">
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <div class="navdropdow_profile">
+                                    <div class="navdropdow_profile_img">
+                                        <img src="assets/img/User2.svg" alt="">
+                                    </div>
+                                    <div class="navdropdow_profile_text">
+                                        <span>Hello,</span>
+                                        <p>Muhammad Ali</p>
+                                        <a href="#">View & saved Searches</a>
+                                    </div>
+                                </div>
+                              <li><a class="dropdown-item" href="Favourite_SavedSearches.html">Favorite & Saved Searches</a></li>
+                              <li><a class="dropdown-item" href="contactus.html">Contact Us</a></li>
+                              <li><a class="dropdown-item" href="setting.html">Setting</a></li>
+                              <li><a class="dropdown-item" href="helpus.html">Help Us</a></li>
+                              <li><a class="dropdown-item" href="setting.html">Setting</a></li>
+                              <li><a class="dropdown-item" href="order_placed.html">Orders</a></li>
+                              <li><a class="dropdown-item" href="transporation.html">Transportaion</a></li>
+                              <li><a class="dropdown-item" href="real_estate.html">Real Estate</a></li>
+                              <li><a class="dropdown-item" href="accounts/login.html">Login</a></li>
+                              <li><a class="dropdown-item" href="accounts/signup.html">signup</a></li>
+                              <li class="mt-3" style="border-top: 1px solid #000;"><a class="dropdown-item" href="real_estate.html">Logout</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Header>
+
+
+    <section class="payment_method_section_one">
+        <div class="container_fluid manage_container">
+            <div class="payment_method_card_body_div">
+                <h1 class="payment_title">Checkout</h1>
+                <div class="payment_top_text_div">
+                    <h5>Payment Details</h5>
+                    <p>Complete your payment method by providing the details below</p>
+                </div>
+                <div class="payment_inputs_main_div">
+                    <div class="payment_input1_div">
+                        <label for="">Email Address</label>
+                        <input type="text" placeholder="Muhammadali3344@gmail.com">
+                        <img src="assets/img/GmailLogo.svg" alt="">
+                    </div>
+                    <div class="payment_radio_btns_main">
+                        <h6>Select Payment Method</h6>
+                        <div class="payment_radio_btn_inner">
+                            <input type="radio" name="payment" id="1">
+                            <label for="1">Debit Card</label>
+                        </div>
+                        <div class="payment_radio_btn_inner">
+                            <input type="radio" name="payment" id="2">
+                            <label for="2">Credit Card</label>
+                        </div>
+                        <div class="payment_radio_btn_inner">
+                            <input type="radio" name="payment" id="3">
+                            <label for="3">Jazz cash / Easypaisa / Telenorpay</label>
+                        </div>
+                        <div class="payment_radio_btn_inner">
+                            <input type="radio" name="payment" id="4">
+                            <label for="4">Pay via Cash</label>
+                        </div>
+                    </div>
+                    <h6 class="card_details">Card Details</h6>
+                    <div class="payment_inputs_div">
+                        <label for="">Name on Card</label>
+                        <input type="text" placeholder="Name on Card">
+                    </div>
+                    <div class="payment_inputs_div">
+                        <label for="">Card Number</label>
+                        <input type="text" placeholder="Card Number">
+                    </div>
+                    <div class="row" style="justify-content: space-between;">
+                        <div class="col-lg-5 col-md-5 co-sm-9">
+                            <div class="payment_inputs_div">
+                                <label for="">Exp.</label>
+                                <input type="text" placeholder="08/28">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 co-sm-9">
+                            <div class="payment_inputs_div">
+                                <label for="">CVV</label>
+                                <input type="number" placeholder="234">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment_method_last_total">
+                    <h5>Total</h5>
+                    <h5>$100</h5>
+                </div>
+                <div class="payment_method_last_btn">
+                    <button type="button">Place order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <div class="container">
+        <div class="transporaion_bottom_bar">
+            <h5>Popular Categories :</h5>
+            <a href="#">House </a>
+            <a href="#">Office</a>
+            <a href="#">Flat</a>
+            <a href="#">Appartments</a>
+        </div> 
+
+    </div> -->
+
+    <div class="strok_img mt-3">
+        <img src="assets/img/Stroke.png" alt="">
+    </div>
+
+    <section class="footer_section">
+        <div class="container-fluid manage_container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer_card_body_div footer_card_border">
+                        <div class="footer_text_inner_div">
+                            <h4>POPULAR CATEGORIES</h4>
+                            <a href="#">Transportaion</a>
+                            <a href="#">Real Estate</a>
+                            <a href="#">Construction Machinery</a>
+                            <a href="#">Industrial Machinery</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer_card_body_div footer_card_border">
+                        <div class="footer_text_inner_div">
+                            <h4>TRENDING CATEGORIES</h4>
+                            <a href="#">Transportaion</a>
+                            <a href="#">Real Estate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer_card_body_div footer_maxwidth">
+                        <div class="footer_text_inner_div">
+                            <h4>CONTACT US</h4>
+                            <a href="#">+92-333-4148532</a>
+                            <a href="#">info@rentaforall.com</a>
+                        </div>
+                        <div class="footer_text_inner_div">
+                            <h4>FOLLOW US</h4>
+                            <div class="footer_icons_div">
+                                <img src="assets/img/Facebook.svg" alt="">
+                                <img src="assets/img/Instagram.svg" alt="">
+                                <img src="assets/img/YouTube.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom_text">
+                <p>Copyright © 2023 RENTA FOR ALL - All Rights Reserved. Powered
+                    by RENTA For All (Pvt)  Ltd.</p>
+            </div>
+        </div>
+        <div class="footer_img_div">
+            <img src="assets/img/footerimg.svg" alt="">
+        </div>
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

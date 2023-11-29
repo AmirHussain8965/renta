@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+.accounts_section{
+    background-image: url(../../assets/img/accounts.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    max-width: 1450px;
+    background-position: center;
+    margin: auto;
+    overflow-y: auto;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accounts_section::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.accounts_card_body_div{
+    box-shadow: 0px 4px 46px 0px #00000040;
+    background: #FFFFFF;
+    height: auto;
+    min-height: 500px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 60px;
+}
+.accounts_logo{
+    padding-top: 20px;
+    text-align: center;
+}
+.accounts_logo h4{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    padding-top: 40px;
+    color: #000000;
+}
+.accounts_logo p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #878787;
+}
+.accounts_input_main_div{
+    padding-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+.accounts_input_div{
+    margin-top: 20px;
+}
+.accounts_input_div input{
+    border: 1px solid #000000;
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 11px;
+    outline: none;
+    font-size: 16px;
+}
+.accounts_input_div input::placeholder{
+    color: #CACACA;
+    font-size: 15px;
+}
+.accounts_icons_input_div{
+    margin-top: 20px;
+    position: relative;
+}
+.accounts_icons_input_div input{
+    border: 1px solid #000000;
+    width: 100%;
+    padding: 12px 35px;
+    border-radius: 11px;
+    outline: none;
+    font-size: 16px;
+}
+.accounts_icons_input_div input::placeholder{
+    color: #CACACA;
+    font-size: 15px;
+}
+.accounts_icons_input_div .input_img1{
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+.accounts_icons_input_div .input_img2{
+    position: absolute;
+    right: 18px;
+    top: 14px;
+}
+.accounts_btn_div{
+    padding-bottom: 80px;
+    text-align: end;
+    margin-top: 20px;
+}
+.accounts_btn_div button{
+    background: #192C55;
+    padding: 8px;
+    border-radius: 11px;
+    width: 140px;
+    border: none;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 15px;
+}
+.login_remind_me{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+.login_remind_me a{
+    padding-top: 5px;
+    text-decoration: none;
+    color: #192C55;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+}
+.remindme_input{
+    display: flex;
+    gap: 5px;
+    padding-top: 5px;
+}
+.remindme_input label{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+.accounts_login_btn_div{
+    text-align: center;
+    margin-top: 20px;
+}
+.accounts_login_btn_div button{
+    background: #192C55;
+    padding: 8px;
+    border-radius: 11px;
+    width: 140px;
+    border: none;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 15px;
+}
+.or_text{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #000000;
+    margin-bottom: 0;
+    padding: 20px 0px;
+}
+.continue_with_google{
+    margin-bottom: 80px;
+    border: 1px solid #000000;
+    background:  #F8F8F8;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.password_recover_btn{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.password_recover_btn button{
+    background: #192C55;
+    padding: 10px;
+    border-radius: 11px;
+    width: 170px;
+    border: none;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 17px;
+}
+.otp_code_main_div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.otp_code_main_div input{
+    margin-top: 10px;
+    width: 60px;
+    padding: 15px 8px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+.code_time{
+    color: #878787;
+    text-align: center;
+    padding: 20px 0px;
+    margin-bottom: 0;
+}
+.otp_code_last_btns_main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.otp_code_last_btns_main button{
+    width: 100%;
+    max-width: 230px;
+    margin: auto;
+    border: 1px solid #192C55;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    padding: 12px 5px;
+    background-color: transparent;
+    margin-top: 20px;
+    border-radius: 11px;
+    color: #192C55;
+}
+.otp_code_last_btns_main .code_active_btn{
+    background: #192C55;
+    color: #fff;
+}
+@media (max-width:576px){
+    .accounts_card_body_div{
+        padding: 40px 20px;
+    }
+    .accounts_section{
+        padding: 50px 10px;
+    }
+}

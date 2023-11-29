@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Renta - Sign Up </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/acconts.css">
+  </head>
+
+  <style>
+    .toggle {
+        cursor: pointer;
+    }
+    #show.visible {
+        display: block;
+    }
+    #hide.visible {
+        display: none;
+    }
+    .toggle2 {
+        cursor: pointer;
+    }
+    #show2.visible2 {
+        display: block;
+    }
+    #hide2.visible2 {
+        display: none;
+    }
+  </style>
+
+  <body>
+    
+    <section class="accounts_section">
+        <div class="accounts_card_body_div">
+            <div class="accounts_logo">
+                <img src="../assets/img/a_logo.svg" alt="">
+                <h4>Welcome !</h4>
+                <p>Sign up your Account</p>
+            </div>
+            <form class="accounts_input_main_div">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="accounts_input_div">
+                            <input type="text" placeholder="First name" required/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="accounts_input_div">
+                            <input type="text" placeholder="Last name" required/>
+                        </div>
+                    </div>
+                </div>
+                    <div class="accounts_icons_input_div">
+                        <input type="number" placeholder="CNIC number" required min="0"/>
+                        <img src="../assets/img/CreditCard.svg" alt="" class="input_img1">
+                    </div>
+                    <div class="accounts_icons_input_div">
+                        <input type="text" placeholder="Enter your E-mail / Mobile number" required/>
+                        <img src="../assets/img/Gmail.svg" alt="" class="input_img1">
+                    </div>
+                    <div class="accounts_icons_input_div">
+                        <input type="password" id="password" placeholder="Password" required/>
+                    <img src="../assets/img/Lock.svg" alt="" class="input_img1">
+                     <img src="../assets/img/Eye.svg" alt="Show Password" class="toggle input_img2" id="show">
+                     <img src="../assets/img/Blind.svg" alt="Hide Password" class="toggle input_img2" id="hide">
+                    </div>
+                    <div class="accounts_icons_input_div">
+                        <input type="password" id="password2" placeholder="Confirm Password" required/>
+                        <img src="../assets/img/Lock.svg" alt="" class="input_img1">
+                        <img src="../assets/img/Eye.svg" alt="Show Password" class="toggle2 input_img2" id="show2">
+                        <img src="../assets/img/Blind.svg" alt="Hide Password" class="toggle2 input_img2" id="hide2">
+                    </div>
+                    <div class="accounts_btn_div">
+                        <button type="submit">Sign up </button>
+                    </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".toggle").click(function () {
+                var passwordField = $("#password");
+                var fieldType = passwordField.attr("type");
+
+                if (fieldType === "password") {
+                    passwordField.attr("type", "text");
+                    $(".toggle").removeClass("visible");
+                    $("#hide").addClass("visible");
+                } else {
+                    passwordField.attr("type", "password");
+                    $(".toggle").removeClass("visible");
+                    $("#show").addClass("visible");
+                }
+            });
+        });
+        $(document).ready(function () {
+            $(".toggle2").click(function () {
+                var passwordField2 = $("#password2");
+                var fieldType2 = passwordField2.attr("type");
+
+                if (fieldType2 === "password") {
+                    passwordField2.attr("type", "text");
+                    $(".toggle2").removeClass("visible2");
+                    $("#hide2").addClass("visible2");
+                } else {
+                    passwordField2.attr("type", "password");
+                    $(".toggle2").removeClass("visible2");
+                    $("#show2").addClass("visible2");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
